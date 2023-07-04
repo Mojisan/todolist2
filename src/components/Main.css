@@ -43,7 +43,7 @@ button {
     border: none;
     background-color: #fff;
     font-size: 30px;
-    margin-right: 30px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -62,6 +62,7 @@ button {
 
 h1 {
     color: rgb(0, 81, 195);
+    font-size: 20px;
 }
 
 .completed {
@@ -92,6 +93,7 @@ fieldset {
 }
 
 legend {
+    font-size: 15px;
     margin-left: 10px;
     color: red;
 }
@@ -111,4 +113,51 @@ legend {
 
 .topic {
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    container {
+        padding: 30px 50px;
+    }
+
+    legend, .description, .time, .task{
+        font-size: 12px;
+    }
+
+    .image {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    .inputTask {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    container {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+
+    fieldset {
+        height: 30px;
+        padding-bottom: 5px;
+    }
+
+    legend, .description{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    legend, .description{
+        font-size: 8px;
+    }
 }

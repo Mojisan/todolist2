@@ -1,5 +1,6 @@
 import './Main.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+/* import React, { useEffect } from 'react'; */
 
 function Main() {
     const [data, setData] = useState({
@@ -8,7 +9,7 @@ function Main() {
     });
     const [currentTime, setCurrentTime] = useState(new Date());
 
-    useEffect = (() => {
+    /* useEffect = (() => {
         const interval = setInterval(() => {
             setCurrentTime(new Date());
         }, 1000);
@@ -16,7 +17,7 @@ function Main() {
         return () => {
             clearInterval(interval);
         };
-    },[]);
+    },[]); */
 
     const handleInputChange = (e) => {
         const newData = e.target.value;
@@ -85,10 +86,10 @@ function Main() {
     )
 
     const updateStatus = (i) => {
-        const submitTime = currentTime.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+        /* const submitTime = currentTime.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }); */
         const changeStatus = data.items.map(item => {
             if (item.id === i) {
-                return { ...item, status : 'completed', time : submitTime}
+                return { ...item, status : 'completed', /* time : submitTime */}
             }
             return item;
         });

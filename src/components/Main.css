@@ -1,0 +1,114 @@
+container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
+    padding: 50px 100px;
+}
+
+section {
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 10px;
+}
+
+section:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.remaining {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.member {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    font-size: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.check {
+    color: green;
+}
+
+.bin {
+    color: red;
+}
+
+.task {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h1 {
+    color: rgb(0, 81, 195);
+}
+
+.completed {
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.time {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.box1 {
+    text-align: center;
+    padding: 30px 30%;
+}
+
+form {
+    text-align: left;
+}
+
+fieldset {
+    width: auto;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+legend {
+    margin-left: 10px;
+    color: red;
+}
+
+.inputTask {
+    border: none;
+    width: 95%;
+    height: 80%;
+    margin-left: 10px;
+}
+
+.description {
+    color: red;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.topic {
+    margin-bottom: 20px;
+}

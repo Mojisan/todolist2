@@ -7,7 +7,7 @@ function Main() {
         items : [],
         inputValue : '',
     });
-    const [currentTime, setCurrentTime] = useState(new Date());
+    /* const [currentTime, setCurrentTime] = useState(new Date()); */
 
     /* useEffect = (() => {
         const interval = setInterval(() => {

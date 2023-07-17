@@ -1,0 +1,268 @@
+.todolist {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.users-container {
+    margin: 50px 100px 25px;
+}
+
+.tasks-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
+    padding: 25px 100px 50px;
+}
+
+.box0 {
+    width: auto;
+    height: auto;
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+.tasks-section {
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 10px;
+}
+
+.tasks-section:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.remaining {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.member {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.icon-button {
+    border: none;
+    background-color: #fff;
+    font-size: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.check {
+    color: green;
+}
+
+.bin {
+    color: red;
+}
+
+.task {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.topic {
+    color: rgb(0, 81, 195);
+    font-size: 20px;
+}
+
+.completed {
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.time {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.box1 {
+    text-align: center;
+    padding: 30px 30%;
+}
+
+.addtask-form {
+    text-align: left;
+}
+
+.addtask-fieldset {
+    width: auto;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+.addtask-legend {
+    font-size: 15px;
+    margin-left: 10px;
+    color: red;
+}
+
+.inputTask {
+    border: none;
+    width: 95%;
+    height: 80%;
+    margin-left: 10px;
+}
+
+.description {
+    color: red;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.topic-1 {
+    margin-bottom: 20px;
+}
+
+.adduser-form {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 0px 30%;
+}
+
+.label-user {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.topic-0 {
+    margin-bottom: 10px;
+}
+
+.inputName {
+    width: 50%;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.inputImage {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 12px;
+    margin-left: 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.saveUser {
+    padding: 0.5rem 1rem;
+    background-color: green;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .tasks-container {
+        padding: 30px 50px;
+    }
+
+    .users-container {
+        padding: 0px;
+        margin: 20px 50px 0px;
+    }
+
+    .addtask-legend, .description, .time, .task{
+        font-size: 12px;
+    }
+
+    .image {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+    }
+
+    .icon-button {
+        font-size: 20px;
+    }
+
+    .inputTask {
+        width: 80%;
+    }
+
+    .inputName {
+        width: 50%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tasks-container {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+
+    .topic {
+        font-size: 16px;
+    }
+
+    .addtask-fieldset {
+        height: 30px;
+        padding-bottom: 5px;
+    }
+
+    .addtask-legend, .description{
+        font-size: 10px;
+    }
+
+    .inputName {
+        width: 70%;
+        padding: 5px;
+        margin-left: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    .label-user {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topic {
+        font-size: 12px;
+    }
+
+    .addtask-legend, .description, .label-user{
+        font-size: 8px;
+    }
+
+    .saveUser {
+        padding: 0.25rem 0.5rem;
+        border-radius: 2px;
+        font-size: 10px;
+    }
+}
